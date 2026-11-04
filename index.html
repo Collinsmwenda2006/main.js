@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 520px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+        form { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+        input, select, button { font-size: 1rem; padding: 0.4rem; }
+        input { width: 6rem; }
+        #result { margin-top: 1rem; font-size: 1.25rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Check the console!</h1>
+    <p>Press F12 and open the Console to see the Week 4 practice output.</p>
+
+    <h2>Calculator</h2>
+    <form id="calc-form">
+        <input type="number" id="num1" step="any" required aria-label="First number">
+        <select id="operator" aria-label="Operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+            <option value="**">**</option>
+        </select>
+        <input type="number" id="num2" step="any" required aria-label="Second number">
+        <button type="submit">=</button>
+    </form>
+    <p id="result" aria-live="polite"></p>
+
+    <script src="main.js"></script>
+    <script src="calculator.js"></script>
+    <script src="gradeTracker.js"></script>
+    <script src="challenges.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
